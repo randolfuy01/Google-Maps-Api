@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google Node Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 style = "text-align: center;"> Google Node Visualizer </h1>
+    <h4 style = "text-align: center;"> Please Insert Locations You would like to see visualized </h4>
+    <form style = "text-align: center" action = "/action_page.js">
+        <label> <input type= "text" id = "locations"/> </label>
+        <label><input type = "button" value = "Add to list" id = "add" /> </label>
+    </form>
+    <form style = "text-align: center" action = "/action_page.js">
+        <label for = "visualizer"> <br> Choose a Visualizer Style <br> </label>
+            <select name="dog-names" id="dog-names"> 
+                <option value = "None"> None </option>
+                <option value = "Bfs"> Breadth-first Search </option>
+                <option value = "Minimum Spanning"> Minimum Spanning Tree </option>
+                <option value = "A*"> A* Algorithm </option>
+                <option value = "Dijkstra"> Dijkstra's Algorithm</option>
+                <option value = "Shortest-Path"> Shortest Path Algorithm </option>
+                <option value = "Korsaraju"> Korsaraju's Algorithm </option>
+                <option value = "Kruskal"> Kruskal's Algorithm</option>
+            </select>
+        <label><input type = "button" value = "Select algorithm" id = "algorithm"></label>
+    </form>
+
+
+	<script src="index.js"></script>
+  </body>
+</html>
